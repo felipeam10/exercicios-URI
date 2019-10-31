@@ -1,21 +1,18 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class URI_1014_Consumo {
+public class URI_1016_Distancia {
 
 	public static void main(String[] args) throws IOException {
 		Scanner sc = new Scanner(System.in);
 		
-		int x;
-		double y, media;
+		int dist;
 		
+		dist = sc.nextInt();
+
+		int tempo = (int) (dist / ((90/60.0) - (60/60.0)));
 		
-		x = sc.nextInt();
-		y = sc.nextDouble();
-				
-		media = x/y;
-		
-		System.out.printf("%.3f km/l\n", media);
+		System.out.printf("%d minutos\n", tempo);
 		
 		sc.close();
 		
